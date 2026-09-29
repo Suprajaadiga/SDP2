@@ -1,0 +1,160 @@
+/* Page background */
+body {
+    background-color: #55a5e8;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Main container */
+.profile-container {
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+/* Profile section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 35px;
+}
+
+
+/* Profile photo */
+.profile-photo {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #f5c76a;
+}
+
+
+/* Name and description */
+.profile-info h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-info p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+
+/* Boxes area */
+.boxes {
+    margin-bottom: 20px;
+}
+
+
+/* Common box design */
+.info-box {
+    min-height: 400px;
+    margin: 10px;
+    padding: 15px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Pink boxes */
+.pink-box {
+    background-color: #e77b9e;
+}
+
+
+/* Images inside boxes */
+.pink-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* School / College name */
+.info-box h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+}
+
+
+/* Description */
+.info-box p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+
+/* Website link */
+.info-box a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+}
+
+
+/* Green hobbies box */
+.green-box {
+    background-color: #8bcf72;
+    min-height: auto;
+}
+
+
+/* Hobbies list */
+.green-box ul {
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.green-box li {
+    margin-bottom: 8px;
+}
+
+
+/* Mobile screen */
+@media (max-width: 768px) {
+
+    .profile-section {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .info-box {
+        min-height: 350px;
+        margin: 10px 0;
+    }
+
+    .pink-box img {
+        height: 160px;
+    }
+}
